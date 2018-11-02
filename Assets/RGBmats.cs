@@ -19,7 +19,7 @@ public class RGBmats : MonoBehaviour {
 
 
     void Start () {
-        freq = 12;    // adjust this to change the color cycle speed
+        freq = 3;    // adjust this to change the color cycle speed
                       // freq = rad / sec; with ~6.2 rad / cycle
         step = 0;     // time counter to step the sine waves
         mymat = GetComponent<Renderer>().material;
