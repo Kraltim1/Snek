@@ -15,6 +15,6 @@ public class pickup : MonoBehaviour {
 		//Debug.Log("xD");
 		transform.position = new Vector3((Random.value * MaxWidth) - MaxWidth / 2, (Random.value * MaxHeight) - MaxHeight / 2, (Random.value * MaxWidth) - MaxWidth / 2);
 		p.GetComponent<CollisionManager>().aliveTime++;
-		ps.playRandomMusic();
+		ps.playHitSound();
 	}
 }
