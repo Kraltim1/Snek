@@ -41,10 +41,13 @@ public class GameOver : MonoBehaviour
 			// text = "RIP\nScore: " + c.aliveTime.ToString();
             reticle.text = ""; // hide reticle
             gameOverA.text = "RIP";
-            gameOverB.text = "press space to restart";
+            gameOverB.text = "space: retry\nesc: menu";
 			if(Input.GetKeyDown(KeyCode.Space)) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene ().name); // Restart level
 			}
+            if(Input.GetKeyDown(KeyCode.Escape)) {
+                SceneManager.LoadScene ("menu");
+            }
 		}
 	}
 
