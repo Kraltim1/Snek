@@ -4,7 +4,6 @@ using System.Collections;
 public class FPSDisplay : MonoBehaviour
 {
 	float deltaTime = 0.0f;
-	int w, h;
 	Rect rect;
 	GUIStyle style;
 	float msec;
@@ -13,8 +12,6 @@ public class FPSDisplay : MonoBehaviour
 	string text;
 
 	void Start() {
-		w = Screen.width;
-		h = Screen.height;
 		rect = new Rect(0, 0, 100, 12);
 		style = new GUIStyle();
 		style.alignment = TextAnchor.UpperLeft;
