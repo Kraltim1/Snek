@@ -7,14 +7,7 @@ public class pickup : MonoBehaviour {
 	public float MaxHeight = 100;
 	public float MaxWidth = 100;
 
-	public GameObject p;
-
-	public PickupSounds ps;
-
-	public void GotHit() {
-		//Debug.Log("xD");
+	public void Randomize() {
 		transform.position = new Vector3((Random.value * MaxWidth) - MaxWidth / 2, (Random.value * MaxHeight) - MaxHeight / 2, (Random.value * MaxWidth) - MaxWidth / 2);
-		p.GetComponent<CollisionManager>().aliveTime++;
-		ps.playHitSound();
 	}
 }
